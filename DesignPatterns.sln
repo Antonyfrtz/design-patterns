@@ -6,6 +6,10 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns", "DesignPatterns\DesignPatterns.csproj", "{439BB9A4-E688-4793-A5D9-A78BF1907C93}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cloud Design Patterns", "Cloud Design Patterns", "{1D198A96-50B3-4FF1-8250-9F576A2271C9}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\Πανεπιστημιο\documentation.doc = ..\..\..\Desktop\Πανεπιστημιο\documentation.doc
+		..\..\..\Desktop\presentation.pptx = ..\..\..\Desktop\presentation.pptx
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

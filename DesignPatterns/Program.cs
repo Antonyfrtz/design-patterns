@@ -1,3 +1,5 @@
+using DesignPatterns.Models._2;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -12,7 +14,6 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
-
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
@@ -23,3 +24,14 @@ app.UseAuthorization();
 app.MapRazorPages();
 
 app.Run();
+
+//Door door = new Door();
+//PasswordProtector protector = new PasswordProtector();
+//ProtectedDoor door2 = new ProtectedDoor(protector);
+//open(door2);
+//open(door);
+
+//static void open(Door d)
+//{
+//    d.unlockDoor();
+//}

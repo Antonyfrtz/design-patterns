@@ -2,14 +2,14 @@
 {
     public class Rectangle : Shape
     {
-        public void draw()
+        public string draw()
         {
-            Console.WriteLine("Drawing Rectangle");
+            return "Drawing Rectangle";
         }
 
-        public void resize()
+        public string resize()
         {
-            Console.WriteLine("Resizing Rectangle");
+            return "Resizing Rectangle";
         }
 
         public string description()

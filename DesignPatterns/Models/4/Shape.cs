@@ -2,8 +2,8 @@
 {
     public interface Shape
     {
-        void draw();
-        void resize();
+        string draw();
+        string resize();
         String description();
         Boolean isHide();
     }

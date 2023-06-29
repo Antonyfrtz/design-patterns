@@ -2,6 +2,6 @@
 {
     public interface Color
     {
-        void draw();
+        string draw();
     }
 }

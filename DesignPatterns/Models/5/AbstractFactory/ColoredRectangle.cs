@@ -4,6 +4,6 @@
     {
         private String _color;
         public ColoredRectangle(String color) { _color = color; }
-        public void draw() { Console.WriteLine(_color + " Rectangle"); }
+        public string draw() { return _color + " Rectangle"; }
     }
 }

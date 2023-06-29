@@ -16,6 +16,9 @@ if (!app.Environment.IsDevelopment())
 }
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Main}/{action=Index}");
 
 app.UseRouting();
 
@@ -24,14 +27,3 @@ app.UseAuthorization();
 app.MapRazorPages();
 
 app.Run();
-
-//Door door = new Door();
-//PasswordProtector protector = new PasswordProtector();
-//ProtectedDoor door2 = new ProtectedDoor(protector);
-//open(door2);
-//open(door);
-
-//static void open(Door d)
-//{
-//    d.unlockDoor();
-//}

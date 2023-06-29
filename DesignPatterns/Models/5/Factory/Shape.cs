@@ -2,6 +2,6 @@
 {
     public interface Shape
     {
-        void draw();
+        string draw();
     }
 }

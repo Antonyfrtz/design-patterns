@@ -2,9 +2,9 @@
 {
     public class Square : Shape
     {
-        public void draw()
+        public string draw()
         {
-            Console.WriteLine("This is a Square");
+            return "This is a Square";
         }
     }
 }

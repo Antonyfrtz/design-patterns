@@ -23,9 +23,9 @@
             return Math.Sqrt(s * (s - a) * (s - b) * (s - c));
         }
 
-        public void drawShape()
+        public string drawShape()
         {
-            Console.WriteLine("Drawing Triangle with area: " + area() + " and perimeter: " + perimeter());
+            return "Drawing Triangle with area: " + area() + " and perimeter: " + perimeter();
         }
 
         public double perimeter()

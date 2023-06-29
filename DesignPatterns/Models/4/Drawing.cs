@@ -1,4 +1,6 @@
-﻿namespace DesignPatterns.Models._4
+﻿using System.Text;
+
+namespace DesignPatterns.Models._4
 {
     public class Drawing
     {
@@ -16,28 +18,32 @@
             return new List<Shape>(shapes);
         }
 
-        public void draw()
+        public string draw()
         {
+            StringBuilder stringBuilder = new StringBuilder();
             if (shapes.Count == 0)
             {
-                Console.WriteLine("Nothing to draw!");
+                stringBuilder.AppendLine("Nothing to draw!");
             }
             else
             {
-                shapes.ForEach(x => x.draw());
+                shapes.ForEach(x => stringBuilder.AppendLine( x.draw()));
             }
+            return stringBuilder.ToString();
         }
 
-        public void resize()
+        public string resize()
         {
+            StringBuilder stringBuilder = new StringBuilder();
             if (shapes.Count == 0)
             {
-                Console.WriteLine("Nothing to resize!");
+                stringBuilder.AppendLine("Nothing to resize!");
             }
             else
             {
-                shapes.ForEach(x => x.resize());
+                shapes.ForEach(x => stringBuilder.AppendLine( x.resize()));
             }
+            return stringBuilder.ToString();
         }
 
     }

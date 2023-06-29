@@ -1,10 +1,10 @@
 ﻿namespace DesignPatterns.Models._5.Factory
 {
     public class Rectangle : Shape
-    {
-        public void draw()
+    {        
+        public string draw()
         {
-            Console.WriteLine("This is a Rectangle");
+            return "This is a Rectangle";
         }
     }
 }

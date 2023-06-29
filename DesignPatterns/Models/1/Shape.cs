@@ -10,9 +10,10 @@ namespace DesignPatterns.Models._1
         private int height = 100;
         private Rectangle rect;
 
-        public void draw()
+        public string draw()
         {
             rect = new Rectangle(xUpperLeftCorner, yUpperLeftCorner, width, height);
+            return "Drawing rectangle in shape";
             
         }
 

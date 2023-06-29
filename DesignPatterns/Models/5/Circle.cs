@@ -2,9 +2,9 @@
 {
     public class Circle : Shape
     {
-        public void draw()
+        public string draw()
         {
-            Console.WriteLine("This is a Circle");
+            return "This is a Circle";
         }
     }
 }

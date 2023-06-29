@@ -8,8 +8,14 @@
         {
             this.adaptee = adaptee;
         }
-        public void draw() { adaptee.drawShape(); }
-        public void resize() { Console.WriteLine(description() + "can't be resized. Please create a new one with the required values"); }
+        public string draw() 
+        {
+            return adaptee.drawShape(); 
+        }
+        public string resize() 
+        { 
+            return description() + " can't be resized. Please create a new one with the required values"; 
+        }
     
         public String description()
         {

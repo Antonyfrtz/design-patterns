@@ -9,7 +9,7 @@ namespace DesignPatterns.Models._3
         private Grinder grinder;
         private BrewingUnit brewingUnit;
 
-        PremiumCoffeeMachine(Dictionary<CoffeeSelection, CoffeeBean> beans)
+        public PremiumCoffeeMachine(Dictionary<CoffeeSelection, CoffeeBean> beans)
         {
             this.beans = beans;
         }

@@ -2,14 +2,14 @@
 {
     public class Circle : Shape
     {
-        public void draw()
+        public string draw()
         {
-            Console.WriteLine("Drawing Circle");
+            return "Drawing Circle";
         }
 
-        public void resize()
+        public string resize()
         {
-            Console.WriteLine("Resizing Circle");
+            return "Resizing Circle";
         }
 
         public string description()

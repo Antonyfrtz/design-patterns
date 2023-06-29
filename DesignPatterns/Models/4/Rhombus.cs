@@ -26,9 +26,9 @@
             return 2 * (a + b);
         }
 
-        public void drawShape()
+        public string drawShape()
         {
-            Console.WriteLine("Drawing Rhombus with area: " + area() + " and perimeter: " + perimeter());
+            return "Drawing Rhombus with area: " + area() + " and perimeter: " + perimeter();
         }
     }
 }

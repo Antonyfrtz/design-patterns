@@ -4,6 +4,6 @@
     {
         double area();
         double perimeter();
-        void drawShape();
+        string drawShape();
     }
 }
